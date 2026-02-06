@@ -3,7 +3,7 @@
     scroll-behavior: smooth;
 }
 
-/* ================= HEADER ================= */
+/* ################# HEADER ################# */
 h1 {
     text-align: center;
 }
@@ -74,7 +74,7 @@ h1 {
     padding: 16px;
 }
 
-/* ================= CARD ================= */
+/* ################# CARD ################# */
 a {
     text-decoration: none;
 }
@@ -96,27 +96,81 @@ a {
     object-fit: cover;
 }
 
-/* Evidenza */
-.card_evidenza img {
+/* ##### CARD IN EVIDENZA – BANNER ##### */
+
+.evidenza_banner {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
     border-radius: 15px;
 }
 
-.card_evidenza {
-    margin-bottom: 30px;
+.titolo_evidenza {
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+
+.evidenza_banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2px);
+}
+
+/* Sfondo */
+.banner_sfondo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.85);
+}
+
+/* Wrapper centrato */
+.drone_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* Drone */
+.banner_drone {
+    max-width: 70%;
+    height: auto;
+    transition: transform 0.4s ease;
+    transform-origin: center;
+}
+
+/* Hover */
+.card_evidenza:hover {
+    .banner_sfondo {
+        transition: 0.4s ease;
+        filter: blur(8px);
+    }
+
+    .banner_drone {
+        transform: scale(150%);
+    }
+}
+
+.card_evidenza:not(:hover) {
+    .banner_sfondo {
+        transition: 0.4s ease;
+        filter: blur(0px);
+    }
+
+    .banner_drone {
+        transform: scale(100%);
+    }
 }
 
 
-/* DJI */
-.DJI {
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-}
-
-.DJI h2,
-.DJI p {
-    color: #ffffff;
-}
-
-/* ================= MEDIA QUERY ================= */
+/* ################# MEDIA QUERY ################# */
 
 /* Tablet */
 @media (max-width: 992px) {
@@ -161,5 +215,15 @@ a {
     .card-text {
         font-size: 0.9rem;
         line-height: 1.4;
+    }
+}
+
+@media (max-width: 768px) {
+    .evidenza_banner {
+        height: 260px;
+    }
+
+    .banner_drone {
+        max-width: 85%;
     }
 }
