@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+/*######################## CONTROLLO NOME PRODOTTO E NAVBAR ########################*/
+
+/*------------ METTE IL TITOLO A DESTRA E LA NAVBAR A SINISTRA ------------*/
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nome_prodotto {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+
+/*######################## CONTROLLO DELLA FOTO E DESCRIZIONE ########################*/
+
+.descrizione_e_immagine {
+    display: flex;
+    gap: 15px;
+    border: #007bff 5px solid;
+}
+
+.descrizione_e_immagine div p {
+    margin-right: 15px;
+}
+
+
+/*######################## CONTROLLO DEL PREZZO E DELLE RECENSIONI ########################*/
+
+.recensioni_e_prezzo {
+    border: #5d6975 5px solid;
+}
+
+.prezzo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: red 5px solid;
+}
+
+/*------------  CONTROLLO DELLE SINGOLE RECENSIONI ------------*/
+
+.recensione {
+    display: flex;
+    gap: 15px;
+    border: #33ff00 5px solid;
+}
+
+.recensione div p {
+    margin-right: 15px;
+}
+
+
+/*######################## CONTROLLO DELLE MEDIA QUERY ########################*/
+@media screen and (max-width: 425px)  {
+    .descrizione_e_immagine {
+        display: block;
+    }
+
+    .descrizione_e_immagine img {
+        scale: 70%;
+    }
+}

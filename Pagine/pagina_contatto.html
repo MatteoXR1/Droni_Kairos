@@ -1,0 +1,55 @@
+<DOCTYPE html>
+  <html lang="it">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="droni, html, shop, tech">
+    <meta name="description" content="Store online per comprare droni di alta qualità">
+    <meta name="author" content="Matteo Perrone, Gianluca Pennacini, Riccardo Coluccio">
+    <title> Contatti </title>
+  </head>
+
+  <body>
+    <h1>Modulo per Contattarci</h1>
+
+    <form action="invia_contatto.php" method="POST">
+      <fieldset>
+        <legend>Informazioni Personali:</legend>
+
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required><br>
+
+        <label for="cognome">Cognome:</label><br>
+        <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required><br>
+
+        <label for="email">Indirizzo E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="nome.cognome@dominio.it" required><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dettagli della Richiesta:</legend>
+
+        <label for="oggetto">Oggetto:</label><br>
+        <select id="oggetto" name="oggetto" required>
+          <option value="" disabled selected>— Seleziona un argomento —</option>
+          <option value="informazioni">Richiesta di Informazioni Generiche</option>
+          <option value="assistenza">Supporto Tecnico / Assistenza</option>
+          <option value="collaborazione">Proposta di Collaborazione</option>
+          <option value="altro">Altro (Specificare nel testo)</option>
+        </select><br><br>
+
+        <label for="testo">Testo del Messaggio:</label><br>
+        <textarea id="testo" name="testo" rows="8" cols="50" placeholder="Inserisci qui il tuo messaggio..."
+          required></textarea><br>
+
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Invia Messaggio">
+      <input type="reset" value="Cancella Form">
+    </form>
+
+  </body>
+
+  </html>

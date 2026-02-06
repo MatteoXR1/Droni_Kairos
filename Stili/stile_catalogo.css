@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*################################### CONTROLLO DELL'HEADER ###################################*/
+
+/*------------ METTE IL TITOLO A DESTRA E LA NAVBAR A SINISTRA ------------*/
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nome_prodotto {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+
+/*################################### CONTROLLO DEI SINGOLI PRODOTTI ###################################*/
+.prodotto {
+    border: #007bff 5px solid;
+    display: flex;
+}
+
+.prodotto div {
+    border: #ae00ff 5px solid;
+}

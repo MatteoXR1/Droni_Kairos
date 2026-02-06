@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="droni, html, shop, tech">
+    <meta name="description" content="Store online per comprare droni di alta qualità">
+    <meta name="author" content="Matteo Perrone, Gianluca Pennacini, Riccardo Coluccio">
+
+    <link rel="stylesheet" href="Stili/stile_index.css">
+
+    <!--SCRIPT MENU LATERALE-->
+    <script src="script.js"></script>
+
+    <title>Droni Kairòs</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div id="titolo_slogan">
+            <h1 id="titolo">Droni Kairòs</h1>
+            <h4 id="slogan">Cattura l'attimo perfetto</h4>
+        </div>
+
+        <div class="login">
+            <label for="login_btn" id="login_btn_label" onclick="toggle_login();">Login</label>
+            <input type="checkbox" name="login_btn" id="login_btn" hidden>
+
+            <div class="login_menu" id="login_menu">
+                <h2>Accedi al tuo account</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="username" class="username">Username:</label>
+                        <input type="text" name="username" id="username" placeholder="Inserisci username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Inserisci password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Accedi">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <nav class="navbar_header">
+            <div id="mySidenav" class="sidenav">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                    <li><a href="il_nostro_team.html">Il nostro team</a></li>
+                    <li><a href="./Pagine/catalogo_prodotti.html">Catalogo prodotti</a></li>
+                </ul>
+            </div>
+
+            <div id="main" onclick="toggle_Nav(); modifica_barre(this); closeLogin();">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <main id="card">
+        <div class="card_1">
+            <a href="./Pagine/vetrine/vetrina_no_patentino.html">
+                <img src="./Immagini/senza patente/DJI_Avata_2-removebg-preview.png" alt="img_card_1" class="img_drone_card_1">
+            </a>
+        </div>
+
+        <div class="card_2">
+            <a href="./Pagine/vetrine/vetrina_patentino_a1_a3.html">
+                <img src="./Immagini/a1-a3/dji mavic 4 pro/dji_mavic_4_pro.png" alt="img_card_2" class="img_drone_card_2">
+            </a>
+        </div>
+
+        <div class="card_3">
+            <a href="./Pagine/vetrine/vetrina_patentino_a2.html">
+                <img src="./Immagini/a2/Adobe Express - file.png" alt="img_card_3" class="img_drone_card_3">
+            </a>
+        </div>
+    </main>
+
+</body>
+
+</html>

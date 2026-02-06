@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*######################## CONTROLLO NOME PRODOTTO E NAVBAR ########################*/
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    gap: 15px;
+}
+
+.nome_prodotto {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+
+/*######################## CONTROLLO DELLA FOTO E DESCRIZIONE ########################*/
+
+.descrizione_e_immagine {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.descrizione_e_immagine .descrizione {
+    flex: 1;
+    order: 2;
+}
+
+.descrizione_e_immagine img {
+    width: 600px;
+    max-width: 100%;
+    order: 1;
+    flex-shrink: 0;
+    left: 15px;
+}
+
+.descrizione_e_immagine h2 {
+    margin-top: 0;
+}
+
+
+/*######################## CONTROLLO DEL PREZZO E DELLE RECENSIONI ########################*/
+
+.recensioni_e_prezzo {
+    padding: 15px;
+    margin-bottom: 20px;
+
+}
+
+.prezzo {
+    background-color: #0080ff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.prezzo h2 {
+    margin: 0;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/*------------  CONTROLLO DELLE SINGOLE RECENSIONI ------------*/
+
+.recensione {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.recensione:last-child {
+    margin-bottom: 0;
+}
+
+.recensione img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.recensione div {
+    flex: 1;
+}
+
+.recensione h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.recensione p {
+    margin: 0;
+}
+
+
+/*######################## CONTROLLO DEI TRE CONSIGLI ########################*/
+
+.tre_consigliati {
+    padding: 20px 0;
+}
+
+.tre_consigliati a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tre_consigliati .card {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.tre_consigliati .card:hover {
+    transform: translateY(-5px);
+}
+
+.tre_consigliati .card img {
+    width: 100%;
+    height: auto;
+}
+
+.tre_consigliati .card-body h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+/*######################## CONTROLLO DELLE MEDIA QUERY ########################*/
+
+/* Tablet e schermi medi */
+@media screen and (max-width: 768px) {
+    .nome_prodotto {
+        font-size: 1.5rem;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .descrizione_e_immagine {
+        flex-direction: column;
+    }
+
+    .descrizione_e_immagine .descrizione {
+        order: 1;
+    }
+
+    .descrizione_e_immagine img {
+        order: 2;
+        width: 250px;
+        align-self: center;
+    }
+
+    .recensione {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 425px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nome_prodotto {
+        font-size: 1.3rem;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .descrizione_e_immagine {
+        padding: 15px;
+    }
+
+    .descrizione_e_immagine img {
+        width: 200px;
+    }
+
+    .prezzo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .prezzo h2 {
+        font-size: 1.2rem;
+    }
+
+    .recensione img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Schermi molto piccoli */
+@media screen and (max-width: 320px) {
+    .nome_prodotto {
+        font-size: 1.1rem;
+    }
+
+    .descrizione_e_immagine img {
+        width: 150px;
+    }
+
+    .navbar ul {
+        font-size: 0.9rem;
+    }
+}
