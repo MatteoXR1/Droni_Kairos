@@ -1,11 +1,10 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    color: #ffffff;
 }
 
 /*############################################ CONTROLLO DELL'HEADER ############################################*/
-
-
 
 /*--------CONTROLLO DI TITOLO E SOTTOTITOLO--------*/
 
@@ -118,7 +117,7 @@
 .login_menu input[type="text"]:focus,
 .login_menu input[type="password"]:focus {
     outline: none;
-    border-color: #cb6868;
+    border-color: #ffffff;
     background: rgba(255, 255, 255, 0.15);
 }
 
@@ -131,7 +130,7 @@
     width: 100%;
     padding: 12px;
     margin-top: 10px;
-    background: #cb6868;
+    background: #000000;
     color: white;
     border: none;
     border-radius: 8px;
@@ -142,7 +141,8 @@
 }
 
 .login_menu input[type="submit"]:hover {
-    background: #0d6efd;
+    background: #ffffff;
+    color: black;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -262,7 +262,7 @@
 
 .card_1 .img_drone_card_1:hover {
     transition: 0.5s;
-    transform: scale(135%);
+    transform: scale(125%);
 }
 
 .card_1 .img_drone_card_1:not(:hover) {
@@ -371,12 +371,28 @@
 
 
 /*################################ CONTROLLO DEL FOOTER ################################*/
+footer {
+    margin-top: 45px;
+    display: flex;
+}
+
 footer div {
-    background-color: #333;
+    border-radius: 65px 65px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.094);
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    a {
+        text-decoration: none;
+    }
 }
 
 footer p {
