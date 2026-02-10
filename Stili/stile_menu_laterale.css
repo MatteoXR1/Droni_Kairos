@@ -4,7 +4,7 @@
 .bar3 {
     width: 25px;
     height: 5px;
-    background-color: #333;
+    background-color: #ffffff;
     margin: 6px 0;
     transition: 0.4s;
     z-index: 2;
@@ -49,8 +49,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    font-weight: bold;
-    color: #000000;
+    color: #ffffff;
     display: block;
     transition: 0.2s;
 }
