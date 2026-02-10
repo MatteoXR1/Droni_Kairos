@@ -5,9 +5,6 @@
 }
 
 /*############################################ CONTROLLO DELL'HEADER ############################################*/
-html {
-    background-image: url(../Immagini/coolbackgrounds-particles-compute.png);
-}
 
 /*--------CONTROLLO DI TITOLO E SOTTOTITOLO--------*/
 
@@ -265,7 +262,7 @@ html {
 
 .card_1 .img_drone_card_1:hover {
     transition: 0.5s;
-    transform: scale(130%);
+    transform: scale(125%);
 }
 
 .card_1 .img_drone_card_1:not(:hover) {
@@ -375,10 +372,13 @@ html {
 
 /*################################ CONTROLLO DEL FOOTER ################################*/
 footer {
+    margin-top: 45px;
     display: flex;
 }
+
 footer div {
-    background-color: #333;
+    border-radius: 65px 65px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.094);
     text-align: center;
     position: fixed;
     width: 100%;
