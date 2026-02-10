@@ -1,0 +1,67 @@
+h1 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+* {
+    overflow: hidden;
+}
+
+/* --- OTTIMIZZAZIONE PER DISPOSITIVI MOBILI (Max 768px) --- */
+@media screen and (max-width: 768px) {
+    
+    .shape-1 {
+        width: 250px;
+        height: 250px;
+        top: -5%;
+        left: -5%;
+    }
+
+    .shape-2 {
+        width: 200px;
+        height: 200px;
+        bottom: -5%;
+        right: -5%;
+    }
+
+    .shape-3 {
+        display: none; 
+    }
+
+    
+    .sidenav a {
+        font-size: 20px;
+        padding: 10px 10px 10px 20px;
+    }
+
+    .card-title h2 {
+        font-size: 1.2rem;
+    }
+
+    #main {
+        padding: 5px;
+        font-size: 25px;
+    }
+}
+
+/* --- OTTIMIZZAZIONE PER TABLET E SCHERMI MEDI (769px a 1024px) --- */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .shape-1 {
+        width: 350px;
+        height: 350px;
+    }
+
+    .sidenav {
+        padding-top: 80px;
+    }
+}
+
+/* --- GESTIONE ALTEZZA SCHERMO (Per telefoni in orizzontale) --- */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

@@ -42,7 +42,7 @@ img {
 
 .navbar a {
     text-decoration: none;
-    color: #333;
+    color: aliceblue;
     font-weight: 500;
 }
 
@@ -88,6 +88,7 @@ img {
 }
 
 .prezzo {
+    color: #000;
     background-color: #0080ff;
     border-radius: 15px;
     display: flex;

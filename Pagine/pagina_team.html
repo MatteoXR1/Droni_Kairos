@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="droni, html, shop, tech">
+  <meta name="description" content="Store online per comprare droni di alta qualità">
+  <meta name="author" content="Matteo Perrone, Gianluca Pennacini, Riccardo Coluccio">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- MENU LATERALE -->
+  <script src="../script.js"></script>
+  <link rel="stylesheet" href="../Stili/stile_menu_laterale.css">
+
+  <!-- STILE DELLO SFONDO -->
+  <link rel="stylesheet" href="../Stili/stile_sfondo.css">
+
+  <link rel="stylesheet" href="../Stili/stile_team.css">
+
+  <title>Il Nostro Team</title>
+</head>
+
+<!-- ELEMENTI SFONDO -->
+<div class="liquid-shape shape-1"></div>
+<div class="liquid-shape shape-2"></div>
+<div class="liquid-shape shape-3"></div>
+
+<body>
+
+
+  <header>
+    <nav class="navbar_header">
+      <div id="mySidenav" class="sidenav">
+        <ul>
+          <li><a href="../Index.html">Home</a></li>
+          <li><a href="pagina_contatto.html">Contatti</a></li>
+          <li><a href="pagina_team.html">Il nostro team</a></li>
+        </ul>
+      </div>
+
+      <div id="main" onclick="toggle_Nav(); modifica_barre(this);">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-5">
+    <h1 class="text-center"> Il nostro Team </h1>
+    <div class="container">
+      <div class="row g-4"> <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <img src="../Immagini/immagini Team/gialunca_logo.png" alt="Gianluca Pennaccini" class="card-img-top">
+            <div class="card-body text-center">
+                <h2 class="h4"> Gianluca Pennaccini </h2>
+                <p class="text-muted"> Consulente Tecnico </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <img src="../Immagini/immagini Team/matteo_logo.png" alt="Membro Team 2" class="card-img-top">
+            <div class="card-body text-center">
+                <h2 class="h4"> Matteo Perrone </h2>
+                <p class="text-muted"> Sviluppatore Web </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100">
+            <img src="../Immagini/immagini Team/riccardo_logo.png" alt="Membro Team 3" class="card-img-top">
+            <div class="card-body text-center">
+                <h2 class="h4"> Riccardo Coluccio </h2>
+                <p class="text-muted"> UI/UX Designer </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
