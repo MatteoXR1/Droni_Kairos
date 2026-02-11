@@ -3,10 +3,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-* {
-    overflow: hidden;
-}
-
 /* --- OTTIMIZZAZIONE PER DISPOSITIVI MOBILI (Max 768px) --- */
 @media screen and (max-width: 768px) {
     
@@ -54,6 +50,7 @@ h1 {
     .sidenav {
         padding-top: 80px;
     }
+
 }
 
 /* --- GESTIONE ALTEZZA SCHERMO (Per telefoni in orizzontale) --- */
@@ -64,4 +61,5 @@ h1 {
     .sidenav a {
         font-size: 18px;
     }
+
 }
